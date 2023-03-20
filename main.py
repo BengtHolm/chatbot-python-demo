@@ -3,6 +3,8 @@ import sys
 from backend import Chatbot
 import threading
 
+# Creates a chatbot that connects with an OpenAi engine.
+
 
 class ChatbotWindow(QMainWindow):
     def __init__(self):

@@ -3,7 +3,9 @@ import openai
 
 class Chatbot:
     def __init__(self):
-        openai.api_key = "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"
+        # Generate an API-key at https://platform.openai.com/
+        # Sign up and follow instructions
+        openai.api_key = ""
 
     def get_response(self, user_input):
         response = openai.Completion.create(
@@ -16,6 +18,7 @@ class Chatbot:
 
 
 if __name__ == "__main__":
+    # Test the class in this script
     chatbot = Chatbot()
-    response = chatbot.get_response("Tell me a joke about Sweden being woke")
+    response = chatbot.get_response("Tell me a joke about Sweden and Denmark")
     print(response)
